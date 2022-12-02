@@ -32,8 +32,8 @@ class Controller(QMainWindow, Ui_MainWindow):
 
     def player_point3(self):
         self.labelResults.setText('You get a point. Choose again!')
-        self.c_score += 1
-        if self.c_score == 3:
+        self.p_score += 1
+        if self.p_score == 3:
             self.labelResults.setText('You Win!')
             self.reset()
 
